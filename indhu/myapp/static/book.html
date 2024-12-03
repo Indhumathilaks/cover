@@ -1,114 +1,140 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta name="covermap"
-content="width=device-width,initial-sacale=1.0">
-<style>
-.bookpage{
-width:400px;
-height:600px;
-color: rgb(98, 24, 189);
-margin-left: auto;
-margin-right: auto;
-padding: 20px;
-font-family: 'Franklin Gothic Medium','Franklin Gothic Medium','Cooper Black','sans-serief';
-background-image: url(Image.png);
-background-size: cover;
-}
+    <title>Book cover</title>
+    <style>
+        .bookpage{
 
-.insight{
-color:rgb(3, 77, 22);
-}
+            width: 400px;
+            height: 600px;
+            color:black;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            font-family: ' Arial, sans-serif';
+            background-image: url(Image.png);
+            background-size: cover;
+        }
+            
+        
+        .insight{
+            color:rgb(24, 234, 234);
+            font-family: Trebuchet MS;
+        
+        }
+        
+        
+        .hrstyle{
+            width:100px;
+        }
+        .author{
+        
+            display: inline;
+            position: relative;
+            color:rgb(31, 175, 223);
+            top:170px;
+            
+            font-family:Georgia;
+            font-size: medium;
+        }
+        .booktitle{
+            color:rgb(19, 222, 222);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            text-align: left;
+            position: relative;
+            top: 30px;
+        
+        }
+        .id {
+            width:400px;
+            position: relative;
+            top:180px;
+            
+        }
+        .pub{
+            color:rgb(21, 226, 226);
+            font-size: medium;
+            position: relative;
+            top:155px;
+            left:330px;
+        }
+        .ed{
+            color:rgb(4, 147, 95);
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position:relative;
+            bottom:200px;
+        
+        }
+        .subtitle{
+            color:rgb(14, 220, 220);
+            font-family:unicorn;
+            font-size: large;
+            position: relative;
+            top:40px;
+        }
+        .sub{
+            color:rgb(25, 245, 245);
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: large;
+            position: relative;
+            top:340px;
+        }
+        .mypic{
+            position: relative;
+            top: 135px;
+            left: 260px;
+            width: 90px;
+            height: 80px;
+            background-size:contain;
+        }
+        .lpic{
+            position: relative;
+            bottom: 100px;
+            left: 260px;
+            width: 90px;
+            height: 80px;
+            background-size:contain;
+        }
+        </style>
+        <title>Book Cover Page</title>
+        </head>
+        <body>
+        <div class="bookpage">
+            <div class="insight">
+                THE WEBBERS!
+            </div>
+            <div class="hrstyle">
+                <hr style="color:rgb(71, 88, 93)">
+            </div>
+            <div class="booktitle">
+                <h1 style="font-family: 'Times New Roman', Times, serif; color:rgb(181, 108, 35);">WEB WITH HTML AND CSS</h1></div>
+            <div class="subtitle" style="text-align: left;color: rgb(106, 56, 2);">
+                 EASY STEPS TO BUILT YOUR OWN WEBSITE
+            </div>
+            <div class="subtitle" style="color: rgb(133, 75, 4);text-align: left;">
+                 CREATE YOUR OWN DESIGN
 
-.hrstyle{
-width: 100px;
-}
+            </div>
+            <div class="sub" style="color: rgb(226, 10, 10);text-align: left;">
+                If you think maths is hard try web desinging
+           </div>
 
-.author{
-display: inline;
-position: relative;
-color:rgb(6, 29, 145);
-top: 190px;
-font-family: Georgia;
-font-size: medium;
-}
+            <div class="mypic">
+                <img src="me.jpg" width="100" height="100" >
+            </div>
+            <div class="id">
+                <hr style="color:rgb(179, 164, 5)">
+            </div>
+            <div class="author">
+               <p><b>INDHUMATHI L</b></p>
+            </div>
+            <div class="ed">
+                <b>REVISED EDITION 3</b>
+            </div>
+        </div>
+        </body>    
 
-
-.booktitle{
-font-family:'Cooper Black';
-color:rgb(17, 4, 68);
-font-size: Medium;
-text-align: center;
-position: relative;
-top: 30px;
-}
-
-.id{
-width:400px;
-position: relative;
-top:180px;
-}
-
-.pub{
-font-size:medium;
-position: relative;
-color:rgb(3, 53, 85);
-top:155px;
-left:330px;
-}
-
-.ed{
-color:rgb(2, 77, 86);
-font-size: medium;
-font-family: 'Cooper Black';
-position:relative;
-top:85px;
-}
-
-.subtitle{
-font-family:'Lemon Bold';
-font-size:large;
-position: relative;
-top: 25px;
-}
-
-
-.mypic{
-position:relative;
-top:140px;
-left:260px;
-width:100px;
-height:100px;
-background-size:cover;
-}
-
-</style>
-<title>Cover Page</title>
-</head>
-<body>
-<div class="bookpage">
-<div class="insight">
-  SEC INSIGHT
-</div>
-<div class="booktitle">
-<h1>FUNDAMENTAL OF WEB APPLICATION DEVELOPMENT</h1></div>
-<div class="subtitle">
-FROM HTML AND CSS
-</div>
-<div class="mypic">
-<img src="me.jpg" width="130" height="145" alt="">
-</div>
-<div class="id">
-<hr style="color:rgb(255, 255, 255);">
-</div>
-<div class="author">
-<p><b>INDHUMATHI L</b></p>
-</div>
-<div class="pub">
-    SEC
-</div>
-<div class="ed">
-<b>Tenth Edition</b>
-</div>
-</div>
-</body>
 </html>
