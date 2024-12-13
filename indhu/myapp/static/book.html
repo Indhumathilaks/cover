@@ -1,140 +1,113 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Book cover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cover</title>
     <style>
-        .bookpage{
+        body {
+            margin: 0;
+            padding: 0;
+            width: 210mm;
+            height: 297mm;
+            font-family: "Times New Roman", serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            width: 400px;
-            height: 600px;
-            color:black;
-            margin-left: auto;
-            margin-right: auto;
+        .cover-container {
+            position: relative;
+            width: 90%;
+            height: 90%;
+            background: url('Image.png') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             padding: 20px;
-            font-family: ' Arial, sans-serif';
-            background-image: url(Image.png);
-            background-size: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
         }
-            
-        
-        .insight{
-            color:rgb(24, 234, 234);
-            font-family: Trebuchet MS;
-        
-        }
-        
-        
-        .hrstyle{
-            width:100px;
-        }
-        .author{
-        
-            display: inline;
-            position: relative;
-            color:rgb(31, 175, 223);
-            top:170px;
-            
-            font-family:Georgia;
-            font-size: medium;
-        }
-        .booktitle{
-            color:rgb(19, 222, 222);
-            font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
+
+        .top-section {
             text-align: left;
-            position: relative;
-            top: 30px;
-        
         }
-        .id {
-            width:400px;
-            position: relative;
-            top:180px;
-            
-        }
-        .pub{
-            color:rgb(21, 226, 226);
-            font-size: medium;
-            position: relative;
-            top:155px;
-            left:330px;
-        }
-        .ed{
-            color:rgb(4, 147, 95);
-            font-size: medium;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            position:relative;
-            bottom:200px;
-        
-        }
-        .subtitle{
-            color:rgb(14, 220, 220);
-            font-family:unicorn;
-            font-size: large;
-            position: relative;
-            top:40px;
-        }
-        .sub{
-            color:rgb(25, 245, 245);
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: large;
-            position: relative;
-            top:340px;
-        }
-        .mypic{
-            position: relative;
-            top: 135px;
-            left: 260px;
-            width: 90px;
-            height: 80px;
-            background-size:contain;
-        }
-        .lpic{
-            position: relative;
-            bottom: 100px;
-            left: 260px;
-            width: 90px;
-            height: 80px;
-            background-size:contain;
-        }
-        </style>
-        <title>Book Cover Page</title>
-        </head>
-        <body>
-        <div class="bookpage">
-            <div class="insight">
-                THE WEBBERS!
-            </div>
-            <div class="hrstyle">
-                <hr style="color:rgb(71, 88, 93)">
-            </div>
-            <div class="booktitle">
-                <h1 style="font-family: 'Times New Roman', Times, serif; color:rgb(181, 108, 35);">WEB WITH HTML AND CSS</h1></div>
-            <div class="subtitle" style="text-align: left;color: rgb(106, 56, 2);">
-                 EASY STEPS TO BUILT YOUR OWN WEBSITE
-            </div>
-            <div class="subtitle" style="color: rgb(133, 75, 4);text-align: left;">
-                 CREATE YOUR OWN DESIGN
 
-            </div>
-            <div class="sub" style="color: rgb(226, 10, 10);text-align: left;">
-                If you think maths is hard try web desinging
-           </div>
+        .expert-insight {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 4px solid orange;
+            padding-left: 8px;
+            margin-bottom: 10px;
+        }
 
-            <div class="mypic">
-                <img src="me.jpg" width="100" height="100" >
+        .book-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .bottom-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .bottom-section .details {
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .edition {
+            color: orange;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .author-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 10%;
+            border: 2px solid white;
+        }
+
+        .publisher-logo {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <div class="top-section">
+            <div class="expert-insight">Expert Insight</div>
+            <div class="book-title">Responsive Web Design with HTML5 and CSS</div>
+            <div class="subtitle">Develop future-proof responsive websites using the latest HTML5 and CSS techniques</div>
+        </div>
+        <div class="bottom-section">
+            <div class="details">
+                <div class="edition">Limited Edition</div>
+                <div class="author">INDHUMATHI L</div>
             </div>
-            <div class="id">
-                <hr style="color:rgb(179, 164, 5)">
-            </div>
-            <div class="author">
-               <p><b>INDHUMATHI L</b></p>
-            </div>
-            <div class="ed">
-                <b>REVISED EDITION 3</b>
+            <div>
+                <img src="me.jpg" alt="Author Photo" class="author-photo">
             </div>
         </div>
-        </body>    
-
+    </div>
+</body>
 </html>
